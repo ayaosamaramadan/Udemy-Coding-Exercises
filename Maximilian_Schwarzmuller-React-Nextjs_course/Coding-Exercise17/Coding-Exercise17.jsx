@@ -13,27 +13,32 @@
 // Dynamically style a heading depending on which button is pressed.
 
 // Answer:
-
-import React from "react";
+import React from 'react'
 function App() {
-    const [theColor , setTheColor] = React.useState("");
-    return (
-   <> <div id="app">
-      <h1 style={{ color:theColor === "yes" ?"green" : theColor === "no" ? "red" : "white" }}>CSS is great!</h1>
+     const [theColor , setTheColor] = React.useState("");
+   
+  return (
+    <div id="app">
+      <h1 className={
+          theColor=="yes"? "highlight-green": theColor=="no"? "highlight-red":""
+      }>CSS is great!</h1>
       <menu>
         <li>
-          <button onClick={
-              ()=>setTheColor("yes")
-          }>Yes</button>
+          <button
+           
+            onClick={
+              ()=> setTheColor("yes")
+            }>Yes</button>
         </li>
         <li>
-          <button onClick={
+          <button
+           
+           onClick={
               ()=>setTheColor("no")
           }>No</button>
         </li>
       </menu>
     </div>
-    </>
   );
 }
 
