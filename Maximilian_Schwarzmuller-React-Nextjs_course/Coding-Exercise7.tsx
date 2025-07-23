@@ -78,13 +78,13 @@ function App() {
       <p>
         <label>Email</label>
         {/* You don't need to do anything with those inputs! You'll learn how to handle user input later */}
-        <input type="email" />
+        <input title="input" type="email" />
       </p>
 
       <p>
         <label>Password</label>
         {/* You don't need to do anything with those inputs! You'll learn how to handle user input later */}
-        <input type="password" />
+        <input title="input"  type="password" />
       </p>
 
       <p id="actions">

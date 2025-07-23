@@ -54,7 +54,7 @@ function App() {
       <p>
         <label>Name</label>
         {/* You don't need to do anything with this input! You'll learn how to handle user input later */}
-        <input type="text" />
+        <input title="input" type="text" />
       </p>
 
       <p id="actions">
